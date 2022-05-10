@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+body {
+  font-family: 'Questrial', sans-serif;
+  color: #593F0D;
+}
+
+.primary-btn {
+  background: linear-gradient(274.27deg, rgba(255, 255, 255, 0) -14.6%, rgba(255, 255, 255, 0.39) 39.52%, rgba(255, 255, 255, 0) 110.6%), linear-gradient(263.81deg, #FFC771 10.32%, #FFC858 98.17%);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  border: none;
+  border-radius: 14px;
+}
+
+.primary-btn:hover {
+  background: #ffc858;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffc858), color-stop(90%, #58a56d), to(#58a56d));
+  background: linear-gradient(90deg, #ffc858 50%, #58a56d 90%, #58a56d 100%);
+}
+
+.launch-screen {
+  background-image: url(../images/launch-screen/background.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+}
+
+.launch-screen__menu {
+  height: 15vh;
+  background-color: #fff;
+  opacity: 0.9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.launch-screen__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.launch-screen__logo p {
+  margin-left: 10px;
+  width: 50%;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.launch-screen__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.launch-screen__icons p {
+  width: 40%;
+}
+
+.launch-screen__icons img {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.launch-screen__call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.launch-screen__call div h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0;
+}
+
+.launch-screen__call div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.launch-screen__call div div img {
+  margin-right: 5px;
+}
+
+.launch-screen__call button {
+  padding: 15px 28px;
+  padding-top: 19px;
+  margin-left: 22px;
+}
+
+.launch-screen__main {
+  width: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.launch-screen__main h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.launch-screen__main h1 span {
+  color: #FFC771;
+}
+
+.launch-screen__main p {
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 26px;
+  width: 48%;
+}
+
+.launch-screen__main button {
+  padding: 28px 29px;
+  font-size: 22px;
+  margin-top: 40px;
+}
+/*# sourceMappingURL=styles.css.map */

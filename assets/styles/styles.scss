@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body {
+    font-family: 'Questrial', sans-serif;
+    color: #593F0D;
+}
+
+.primary-btn {
+    background: linear-gradient(274.27deg, rgba(255, 255, 255, 0) -14.6%, rgba(255, 255, 255, 0.39) 39.52%, rgba(255, 255, 255, 0) 110.6%), linear-gradient(263.81deg, #FFC771 10.32%, #FFC858 98.17%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    border: none;
+    border-radius: 14px;
+}
+
+.primary-btn:hover {
+    background: rgb(255,200,88);
+    background: linear-gradient(90deg, rgba(255,200,88,1) 50%, rgba(88,165,109,1) 90%, rgba(88,165,109,1) 100%);
+}
+
+@import "launch-screen";
