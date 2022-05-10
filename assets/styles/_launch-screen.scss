@@ -1,6 +1,6 @@
 .launch-screen {
     background-image: url(../images/launch-screen/background.jpg);
-    height: 100vh;
+    height: 93vh;
     width: 100vw;
     background-repeat: no-repeat;
 }
@@ -29,6 +29,8 @@
 
 .launch-screen__icons {
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     p {
         width: 40%;
@@ -83,10 +85,6 @@
     h1 {
         font-size: 40px;
         line-height: 50px;
-
-        span {
-            color: #FFC771;
-        }
     }
 
     p {

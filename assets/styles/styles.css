@@ -2,6 +2,7 @@
 body {
   font-family: 'Questrial', sans-serif;
   color: #593F0D;
+  overflow-x: hidden;
 }
 
 .primary-btn {
@@ -19,9 +20,13 @@ body {
   background: linear-gradient(90deg, #ffc858 50%, #58a56d 90%, #58a56d 100%);
 }
 
+.font-yellow {
+  color: #FFC771;
+}
+
 .launch-screen {
   background-image: url(../images/launch-screen/background.jpg);
-  height: 100vh;
+  height: 93vh;
   width: 100vw;
   background-repeat: no-repeat;
 }
@@ -64,6 +69,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .launch-screen__icons p {
@@ -138,10 +149,6 @@ body {
   line-height: 50px;
 }
 
-.launch-screen__main h1 span {
-  color: #FFC771;
-}
-
 .launch-screen__main p {
   font-size: 25px;
   line-height: 30px;
@@ -153,5 +160,158 @@ body {
   padding: 28px 29px;
   font-size: 22px;
   margin-top: 40px;
+}
+
+.works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.works h2 {
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+.works p {
+  margin-top: 7px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+
+.works__item {
+  width: 580px;
+  height: 410px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  position: relative;
+  opacity: 16;
+}
+
+.works__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.works__items h3 {
+  color: #fff;
+  font-size: 33px;
+  font-weight: 200;
+}
+
+.works__items p {
+  font-size: 33px;
+  color: #FFC771;
+}
+
+.works__items a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.works__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.works__item:nth-child(1):before {
+  content: '';
+  position: absolute;
+  background-image: url(../images/works/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.works__item:nth-child(2):before {
+  content: '';
+  position: absolute;
+  background-image: url(../images/works/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.works__item:nth-child(3):before {
+  content: '';
+  position: absolute;
+  background-image: url(../images/works/3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.works__item:nth-child(4):before {
+  content: '';
+  position: absolute;
+  background-image: url(../images/works/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.works__btn {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 32px 68px;
+  padding-bottom: 27px;
 }
 /*# sourceMappingURL=styles.css.map */

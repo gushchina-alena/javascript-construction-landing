@@ -3,6 +3,7 @@
 body {
     font-family: 'Questrial', sans-serif;
     color: #593F0D;
+    overflow-x: hidden;
 }
 
 .primary-btn {
@@ -18,4 +19,9 @@ body {
     background: linear-gradient(90deg, rgba(255,200,88,1) 50%, rgba(88,165,109,1) 90%, rgba(88,165,109,1) 100%);
 }
 
+.font-yellow {
+    color: #FFC771;
+}
+
 @import "launch-screen";
+@import "works";

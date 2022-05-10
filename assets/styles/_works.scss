@@ -1,0 +1,112 @@
+.works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-size: 40px;
+        line-height: 49px;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-top: 7px;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 25px;
+    }
+}
+    
+.works__item {
+    width: 580px;
+    height: 410px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: relative;
+    opacity: 16;
+}
+
+.works__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    h3 {
+        color: #fff;
+        font-size: 33px;
+        font-weight: 200;
+    }
+
+    p {
+        font-size: 33px;
+        color: #FFC771;
+    }
+
+    a {
+        color: #fff;
+        font-size: 20px;
+    }
+}
+
+.works__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.works__item:nth-child(1):before {
+    content:'';
+    position:absolute;
+    background-image:url(../images/works/1.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    filter: brightness(40%);
+    left:0;top:0;bottom:0;right:0; 
+    z-index:-1;
+}
+
+.works__item:nth-child(2):before {
+    content:'';
+    position:absolute;
+    background-image: url(../images/works/2.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    filter: brightness(40%);
+    left:0;top:0;bottom:0;right:0; 
+    z-index:-1;
+}
+
+.works__item:nth-child(3):before {
+    content:'';
+    position:absolute;
+    background-image: url(../images/works/3.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    filter: brightness(40%);
+    left:0;top:0;bottom:0;right:0; 
+    z-index:-1;
+}
+
+.works__item:nth-child(4):before {
+    content:'';
+    position:absolute;
+    background-image: url(../images/works/4.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    filter: brightness(40%);
+    left:0;top:0;bottom:0;right:0; 
+    z-index:-1;
+}
+
+.works__btn {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 32px 68px;
+    padding-bottom: 27px;
+}
