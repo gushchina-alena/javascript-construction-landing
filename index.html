@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="icon" href="assets/images/launch-screen/logo.svg">
     <title>Астрой</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
                             <p>Ежедневно с 10:00 до 22:00</p>
                         </div>
                     </div>
-                    <button class="primary-btn">ЗАКАЗАТЬ ЗВОНОК</button>
+                    <a href="#popup" class="popup-elem"><button class="primary-btn">ЗАКАЗАТЬ ЗВОНОК</button></a>
                 </div>
             </header>
             <div class="launch-screen__main welcome-info">
@@ -76,10 +77,29 @@
                         <a href="#">Подробнее</a>
                     </div>
                 </div>
-                <button class="primary-btn works__btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                <a href="#popup" class="popup-elem"><button class="primary-btn works__btn popup-elem">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button></a>
             </div>
         </main>
         <footer></footer>
+
     </div>
+
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">закрыть</a>
+                <div class="popup__title">
+                    <h2>Укажите ваши контакты</h2>
+                    <p>и мы перезвоним вам, чтобы назначить удобное время для замера</p>
+                </div>
+                <div class="popup__form">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="text" name="name" placeholder="Телефон"> 
+                </div>
+                <button class="primary-btn popup__btn">ЗАКАЗАТЬ БЕСПЛАТНЫЙ ЗАМЕР</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/popups.js"></script>
 </body>
 </html>
