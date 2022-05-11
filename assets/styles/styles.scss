@@ -14,16 +14,24 @@ body {
     border-radius: 14px;
 }
 
-.primary-btn:hover {
-    background: rgb(255,200,88);
-    background: linear-gradient(90deg, rgba(255,200,88,1) 50%, rgba(88,165,109,1) 90%, rgba(88,165,109,1) 100%);
+.primary-header {
+    font-size: 40px;
+    line-height: 50px;
 }
 
 .font-yellow {
     color: #FFC771;
 }
 
+.primary-btn:hover {
+    background: rgb(255,200,88);
+    background: linear-gradient(90deg, rgba(255,200,88,1) 50%, rgba(88,165,109,1) 90%, rgba(88,165,109,1) 100%);
+}
+
+
+
 @import "launch-screen";
 @import "works";
-
+@import "rates";
+@import "calculator";
 @import "popup";

@@ -35,7 +35,7 @@
                 </div>
             </header>
             <div class="launch-screen__main welcome-info">
-                <h1>Дизайн интерьера, ремонт жилой и коммерческой недвижимости<br><span class="font-yellow">под ключ в Тюмени</span></h1>
+                <h2 class="primary-header">Дизайн интерьера, ремонт жилой и коммерческой недвижимости<br><span class="font-yellow">под ключ в Тюмени</span></h2>
                 <img src="./assets/images/launch-screen/line.svg" alt="yellow line">
                 <p>Выполним ремонт точно в срок 
                     с гарантией по договору</p>
@@ -44,7 +44,7 @@
         </div>
         <main>
             <div class="works">
-                <h2>С <span class="font-yellow">2015 года</span> отремонтировали<br> 
+                <h2 class="primary-header">С <span class="font-yellow">2015 года</span> отремонтировали<br> 
                     более <span class="font-yellow">160 объектов</span></h2>
                 <p>От небольших студий до ресторанов на высоте 100 метров</p>
                 <div class="works__items">
@@ -79,11 +79,101 @@
                 </div>
                 <a href="#popup" class="popup-elem"><button class="primary-btn works__btn popup-elem">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button></a>
             </div>
+            <div class="rates">
+                <h2 class="rates__block-header primary-header">Предлагаем самые <span class="font-yellow">выгодные<br>
+                    решения</span> для наших клиентов</h2>
+                <p class="rates__block-description">Выберите тариф, который вам подходит</p>
+                <div class="rates__cards">
+                    <div class="rates__card">
+                        <img src="assets/images/rates/1.png"></img>
+                        <div class="rates__text">
+                            <div class="rates__card-heading">
+                                <h3>Тариф «Эконом»</h3>
+                                <p>от 4000 ₽/м²</p>
+                            </div>
+                            <div class="rates__services">
+                                <p>— Стены и обои</p>
+                                <p>— Пол: Ламинат или кварцвинил</p>
+                                <p>— Сан. узел - плитка</p>
+                            </div>
+                        </div>
+                        <button class="rates__btn primary-btn">ВЫБРАТЬ</button>
+                    </div>
+                    <div class="rates__card">
+                        <img src="assets/images/rates/2.png"></img>
+                        <div class="rates__text">
+                            <div class="rates__card-heading">
+                                <h3>Тариф «Комфорт»</h3>
+                                <p>от 6000 ₽/м²</p>
+                            </div>
+                            <div class="rates__services">
+                                <p>— Стены и обои или покраска</p>
+                                <p>— Пол: Ламинат или кварцвинил</p>
+                                <p>— Сан. узел - плитка</p>
+                                <p>— Сантехника и электрика</p>
+                            </div>
+                        </div>
+                        <button class="rates__btn primary-btn">ВЫБРАТЬ</button>
+                    </div>
+                    <div class="rates__card">
+                        <img src="assets/images/rates/3.png"></img>
+                        <div class="rates__text">
+                            <div class="rates__card-heading">
+                                <h3>Тариф «Евролюкс»</h3>
+                                <p>от 8000 ₽/м²</p>
+                            </div>
+                            <div class="rates__services">
+                                <p>— Стены и обои или покраска, декоративная штукатурка</p>
+                                <p>— Пол: Ламинат, кварцвинил или кранитная плитка</p>
+                                <p>— Сан. узел - плитка</p>
+                                <p>— Сантехника и электрика</p>
+                                <p>— Натяжные потолки</p>
+                                <p>— Монтаж люстр, раковин, санфоянсоф и т.д.</p>
+                            </div>
+                        </div>
+                        <button class="rates__btn primary-btn">ВЫБРАТЬ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator">
+                <h2 class="calculator__heading primary-header">Рассчитайте стоимость ремонта<br> за <span class="font-yellow">1 минуту</span> с точностью 99%</h2>
+                <div class="calculator__block">
+                    <div class="calculator__form">
+                        <div class="calculator__select">
+                            <p>Тип площади</p>
+                            <select id="area" onchange="detectAreaChange(this)">
+                                <option value="10000">Жилая</option>
+                                <option value="20000">Общая</option>
+                            </select>
+                        </div>
+                        <div class="calculator__select">
+                            <p>Тариф</p>
+                            <select id="rate" onchange="detectRateChange(this)">
+                                <option value="50000">Эконом</option>
+                                <option value="100000">Комфорт</option>
+                                <option value="300000">Евролюкс</option>
+                            </select>
+                        </div>
+                        <div class="calculator__select">
+                            <p>Площадь, м2</p>
+                            <div class="calculator__range">
+                                <input onchange="detectRangeChange(this)" type="range" id="space" name="volume"
+                                min="1" max="300" oninput="rangevalue.value=value">
+                                <output id="rangevalue"></output>
+                            </div>
+                        </div>
+                        <button id="calculator-btn" class="calculator__btn primary-btn">РАССЧИТАТЬ СТОИМОСТЬ</button>
+                        <div class="calculator-result">
+                            <p>Предварительный рассчет:</p>
+                            <p id="calculator-result"></p>
+                        </div>
+                    </div>
+                    <img src="assets/images/calculator-block-img.jpg">
+                </div>
+            </div>
         </main>
         <footer></footer>
-
     </div>
-
     <div id="popup" class="popup">
         <div class="popup__body">
             <div class="popup__content">
@@ -101,5 +191,6 @@
         </div>
     </div>
     <script src="scripts/popups.js"></script>
+    <script src="scripts/calculator.js"></script>
 </body>
 </html>
