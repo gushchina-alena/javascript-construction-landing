@@ -1,0 +1,35 @@
+.trusted__heading {
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+.trusted {
+    margin-left: 120px;
+    margin-right: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trusted__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.trusted__card {
+    margin-bottom: 50px;
+    width: 540px;
+    height: 170px;
+    background-color: #F9F9F9;
+    box-shadow: 0px 2px 24px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+}
+
+.trusted__btn {
+    padding: 32px 68px;
+    padding-bottom: 27px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
