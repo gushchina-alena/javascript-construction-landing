@@ -25,6 +25,14 @@
     box-shadow: 0px 2px 24px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        padding: 25px;
+        width: 120px;
+        height: 120px;
+    }
 }
 
 .trusted__btn {
@@ -32,4 +40,19 @@
     padding-bottom: 27px;
     margin-top: 20px;
     margin-bottom: 100px;
+}
+
+.trusted__text {
+    margin-right: 30px;
+
+    h4 {
+        font-size: 23px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        margin-top: 0;
+        font-size: 19px;
+        line-height: 23px;
+    }
 }

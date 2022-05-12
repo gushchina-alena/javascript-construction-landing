@@ -643,6 +643,18 @@ input[type="range"]::-webkit-slider-thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trusted__card img {
+  padding: 25px;
+  width: 120px;
+  height: 120px;
 }
 
 .trusted__btn {
@@ -650,5 +662,20 @@ input[type="range"]::-webkit-slider-thumb {
   padding-bottom: 27px;
   margin-top: 20px;
   margin-bottom: 100px;
+}
+
+.trusted__text {
+  margin-right: 30px;
+}
+
+.trusted__text h4 {
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.trusted__text p {
+  margin-top: 0;
+  font-size: 19px;
+  line-height: 23px;
 }
 /*# sourceMappingURL=styles.css.map */
