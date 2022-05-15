@@ -8,7 +8,6 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.8s ease 0s;
-
 }
 
 .popup.open {
@@ -75,6 +74,10 @@
         outline: none;
     }
 
+    input.red {
+        border-bottom: 2px solid #D34545;
+    }
+
     input::placeholder {
         color: #A8A8A8;
         font-size: 15px;
@@ -85,4 +88,19 @@
     padding: 32px 56px;
     margin-bottom: 35px;
     margin-top: 55px;
+}
+
+.name-error,
+.number-error {
+    padding-top: 5px;
+    color: #D34545;
+    font-size: 14px;
+}
+
+.popup__success {
+    display: none;
+}
+
+.popup__success.visible {
+    display: block;
 }

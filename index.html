@@ -324,10 +324,17 @@
                     <p>и мы перезвоним вам, чтобы назначить удобное время для замера</p>
                 </div>
                 <div class="popup__form">
-                    <input type="text" name="name" placeholder="Ваше имя">
-                    <input type="text" name="name" placeholder="Телефон"> 
+                    <div>
+                        <input type="text" name="name" placeholder="Ваше имя" id="name-input">
+                        <div class="name-error"></div>
+                    </div>
+                    <div>
+                        <input type="text" name="name" placeholder="Телефон" id="number-input"> 
+                        <div class="number-error"></div>
+                    </div>
                 </div>
                 <button class="primary-btn popup__btn">ЗАКАЗАТЬ БЕСПЛАТНЫЙ ЗАМЕР</button>
+                <div class="popup__success"><p>Спасибо, ожидайте нашего звонка!</p></div>
             </div>
         </div>
     </div>
@@ -338,5 +345,6 @@
     type="text/javascript">
     </script>
     <script src="scripts/map.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 </html>

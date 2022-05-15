@@ -17,3 +17,4 @@ closeBtn.addEventListener("click", function(e) {
     popupOverlay.classList.remove("open"); 
     
 })
+
