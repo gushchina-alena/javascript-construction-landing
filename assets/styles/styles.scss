@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Questrial', sans-serif;
     color: #593F0D;
@@ -34,3 +38,4 @@ body {
 @import "calculator";
 @import "popup";
 @import "trusted";
+@import "question";

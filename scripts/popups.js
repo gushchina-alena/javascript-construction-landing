@@ -1,29 +1,19 @@
-const popupElems = document.querySelectorAll(".popup-elem");
-const body = document.querySelector("body");
-const lockPadding = document.querySelectorAll(".lock-padding");
+const popupBtns = document.querySelectorAll(".modal");
+const closeBtn = document.querySelector(".popup__close");
+const popupOverlay = document.querySelector(".popup");
 
-//чтобы избежать двойного нажатия  
-let unlock = true;
-
-//для корректной работы скролла и свойства transition
-const timeout = 800;
-
-if (popupElems.length > 0) {
-    for (let i = 0; i < popupElems.length; i++) {
-        const popupElem = popupElems[i];
-        popupElem.addEventListener("click",  (e) => {
-            const popupName = popupElem.getAttribute("href").replace("#", "");
-            const currentPopup = document.getElementById(popupName);
-            popupOpen(currentPopup);
+if(popupBtns.length > 0) {
+    for(let i =0; i < popupBtns.length; i++) {
+        const singlePupup = popupBtns[i];
+        singlePupup.addEventListener("click", function(e) {
             e.preventDefault();
+            popupOverlay.classList.add("open");
         })
     }
 }
 
-function popupOpen(currentPopup) {
-    if (currentPopup && unlock) {
-        const popupActive = document.querySelector(".popup.open");
-
-        currentPopup.classList.add("open");
-    }
-}
+closeBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    popupOverlay.classList.remove("open"); 
+    
+})

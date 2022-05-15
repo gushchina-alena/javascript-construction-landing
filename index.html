@@ -31,7 +31,7 @@
                             <p>Ежедневно с 10:00 до 22:00</p>
                         </div>
                     </div>
-                    <a href="#popup" class="popup-elem"><button class="primary-btn">ЗАКАЗАТЬ ЗВОНОК</button></a>
+                    <button class="primary-btn modal">ЗАКАЗАТЬ ЗВОНОК</button>
                 </div>
             </header>
             <div class="launch-screen__main welcome-info">
@@ -39,7 +39,7 @@
                 <img src="./assets/images/launch-screen/line.svg" alt="yellow line">
                 <p>Выполним ремонт точно в срок 
                     с гарантией по договору</p>
-                <button class="primary-btn">Рассчитать стоимость ремонта</button>
+                <a href="#calculator"><button class="primary-btn">Рассчитать стоимость ремонта</button></a>
             </div>
         </div>
         <main>
@@ -77,7 +77,7 @@
                         <a href="#">Подробнее</a>
                     </div>
                 </div>
-                <a href="#popup" class="popup-elem"><button class="primary-btn works__btn popup-elem">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button></a>
+                <button class="primary-btn works__btn modal">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
             </div>
             <div class="rates">
                 <h2 class="rates__block-header primary-header">Предлагаем самые <span class="font-yellow">выгодные<br>
@@ -97,7 +97,7 @@
                                 <p>— Сан. узел - плитка</p>
                             </div>
                         </div>
-                        <button class="rates__btn primary-btn">ВЫБРАТЬ</button>
+                        <button class="rates__btn primary-btn modal">ВЫБРАТЬ</button>
                     </div>
                     <div class="rates__card">
                         <img src="assets/images/rates/2.png"></img>
@@ -113,7 +113,7 @@
                                 <p>— Сантехника и электрика</p>
                             </div>
                         </div>
-                        <button class="rates__btn primary-btn">ВЫБРАТЬ</button>
+                        <button class="rates__btn primary-btn modal">ВЫБРАТЬ</button>
                     </div>
                     <div class="rates__card">
                         <img src="assets/images/rates/3.png"></img>
@@ -131,11 +131,11 @@
                                 <p>— Монтаж люстр, раковин, санфоянсоф и т.д.</p>
                             </div>
                         </div>
-                        <button class="rates__btn primary-btn">ВЫБРАТЬ</button>
+                        <button class="rates__btn primary-btn modal">ВЫБРАТЬ</button>
                     </div>
                 </div>
             </div>
-            <div class="calculator">
+            <div class="calculator" id="calculator">
                 <h2 class="calculator__heading primary-header">Рассчитайте стоимость ремонта<br> за <span class="font-yellow">1 минуту</span> с точностью 99%</h2>
                 <div class="calculator__block">
                     <div class="calculator__form">
@@ -224,7 +224,73 @@
                         </div>
                     </div>
                 </div>
-                <button class="trusted__btn primary-btn">Получить консультацию</button>
+                <button class="trusted__btn primary-btn modal">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+            </div>
+            <div class="questions">
+                <h2>Остались вопросы?</h2>
+                <div id="2" class="question">
+                    <div class="question__head">
+                        <p>Сколько в среднем длится ремонт?</p>
+                        <button class="icon-btn">
+                            <img class="icon-plus" src="assets/images/plus.png" /> 
+                            <img class="icon-minus" src="assets/images/minus.png" />
+                        </button>
+                    </div>
+                    <div class="question__body">
+                        <p class="question__answer question__answer_opened">Answer 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae earum mollitia laboriosam dignissimos vel deleniti dolor nulla laborum ex pariatur facilis nisi quaerat voluptas aut at eligendi, quis delectus nihil.
+                        Perspiciatis ullam omnis quis porro tempora iusto similique, corrupti dolore amet ratione aliquam consequatur iure repudiandae vel recusandae natus quidem deleniti voluptates ipsam.</p>
+                    </div>
+                </div>
+                <div id="2" class="question">
+                    <div class="question__head">
+                        <p>Как происходит оплата?</p>
+                        <button class="icon-btn">
+                            <img class="icon-plus" src="assets/images/plus.png" /> 
+                            <img class="icon-minus" src="assets/images/minus.png" />
+                        </button>
+                    </div>
+                    <div class="question__body">
+                        <p class="question__answer question__answer_opened">Answer 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae earum mollitia laboriosam dignissimos vel deleniti dolor nulla laborum ex pariatur facilis nisi quaerat voluptas aut at eligendi, quis delectus nihil.
+                            Perspiciatis ullam omnis quis porro tempora iusto similique, corrupti dolore amet ratione aliquam consequatur iure repudiandae vel recusandae natus quidem deleniti voluptates ipsam quam illo.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question__head">
+                        <p>Как можно сэкономить на ремонте?</p>
+                        <button class="icon-btn">
+                            <img class="icon-plus" src="assets/images/plus.png" /> 
+                            <img class="icon-minus" src="assets/images/minus.png" />
+                        </button>
+                    </div>
+                    <div class="question__body">
+                        <p class="question__answer question__answer_opened">Answer 3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae earum mollitia laboriosam dignissimos vel deleniti dolor nulla laborum ex pariatur facilis nisi quaerat voluptas aut at eligendi, quis delectus nihil.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question__head">
+                        <p>Какие гарантии на выполненную работу?</p>
+                        <button class="icon-btn">
+                            <img class="icon-plus" src="assets/images/plus.png" /> 
+                            <img class="icon-minus" src="assets/images/minus.png" />
+                        </button>
+                    </div>
+                    <div class="question__body">
+                        <p class="question__answer question__answer_opened">Answer 4: Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusantium quam. Assumenda fugit hic qui explicabo, tenetur incidunt laborum praesentium quibusdam nisi deleniti cupiditate error itaque beatae accusantium ex quo?
+                        Minus voluptate magni cum, aliquam unde, laborum velit mollitia molestiae voluptatibus nostrum veritatis ipsam saepe quasi nulla, dolorem est possimus? Quas temporibus, impedit dignissimos cumque enim nam illum ipsa ratione!</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question__head">
+                        <p>Когда можно вызвать замерщика?</p>
+                        <button class="icon-btn">
+                            <img class="icon-plus" src="assets/images/plus.png" /> 
+                            <img class="icon-minus" src="assets/images/minus.png" />
+                        </button>
+                    </div>
+                    <div class="question__body">
+                        <p class="question__answer question__answer_opened">Answer 5: Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusantium quam.</p>
+                    </div>
+                </div>
             </div>
         </main>
         <footer></footer>
@@ -247,5 +313,6 @@
     </div>
     <script src="scripts/popups.js"></script>
     <script src="scripts/calculator.js"></script>
+    <script src="scripts/questions.js"></script>
 </body>
 </html>
