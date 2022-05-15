@@ -1,6 +1,7 @@
 Javascript project: construction services landing (in progress) 
 
-- Javascript (modals, calculator) 
+- Javascript (popups, calculator, toggle questions) 
+- API
 - SCSS
 - Media Queries
 - BEM
