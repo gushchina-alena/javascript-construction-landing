@@ -1,9 +1,9 @@
-Javascript project: construction services landing (in progress) 
+Javascript project: construction services landing 
 
-- Javascript (popups, calculator, toggle questions) 
+- Javascript: popups, calculator, toggle questions, form validation
 - API
 - SCSS
-- Media Queries
+- Media Queries (in progress) 
 - BEM
 
-![image](https://user-images.githubusercontent.com/77553973/167714611-02c931e2-e812-477f-ac7b-e3ff0166d5b3.png)
+![image](https://user-images.githubusercontent.com/77553973/168490275-a8219b32-0fc2-41f7-be5c-18fcd7e6957f.png)
