@@ -3,6 +3,7 @@
     height: 93vh;
     width: 100vw;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .launch-screen__menu {
@@ -10,7 +11,7 @@
     background-color: #fff;
     opacity: 0.9;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
